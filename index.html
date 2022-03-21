@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.13.1/dist/css/uikit.min.css" />
+    <link href="https://unpkg.com/nes.css/css/nes-core.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.1/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.1/dist/js/uikit-icons.min.js"></script>
+    <title>Pokedex</title>
+</head>
+<body>
+    <header uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky" >
+        <!-- <div class="img_pokedex">
+            <img src="./images/pxArt.png" alt="">
+        </div> -->
+        <div class="uk-navbar-center">
+            <p class="nes-text ">Pokedex</p>
+            <!-- <img src="./images/pokemon-logo.gif" width="50%" alt=""> -->
+        </div>
+        <nav class="uk-navbar-container  uk-navbar-transparent" uk-navbar>
+            <div class="uk-navbar-right" style="margin-right: 20px;" >
+                <a href="#index">Home</a>
+            </div>
+        </nav>
+    </header>
+    <main uk-grid class="uk-flex-center">
+        <!-- <div class="img-logo-container">
+            <img src="./images/pokemon-logo.gif" alt="">
+        </div> -->
+        <section class="busqueda-container uk-width-3-3 uk-flex-center uk-flex-middle" uk-grid="margin: true">
+            <div class="nes-field uk-width-4-5@l uk-width-3-3@m">
+                <!-- <label for="pokemon">Search</label> -->
+                <input type="text" placeholder="Pokemon name" id="pokename"  class="nes-input" name="pokemon">
+            </div>
+            <div class="uk-width-1-5@l uk-width-3-3@m btn-container">
+                <button onclick="imprimir()" type= "button" class="nes-btn is-primary" > Search </button>
+            </div>
+        </section>
+        <section class="resultado-container uk-width-3-3@l uk-flex-center uk-flex-middle" uk-grid="margin: true">
+            <div class="uk-width-1-3@l uk-width-3-3@s screen-container">
+                <div class="uk-position-relative uk-visible-toggle uk-light" style="width: 80%;" tabindex="-1" uk-slideshow="min-height: 300; max-height: 600">
+                    <ul class="uk-slideshow-items" id="poke-images">
+                        <!-- <li>
+                            <img src="" id="pokeImg"  width="80%" alt="pokemon" uk-cover>
+                        </li>
+                        <li>
+                            <img src="" id="pokeImg2" width="80%" alt="pokemon" uk-cover>
+                        </li> -->
+                    </ul>
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+                </div>
+            </div>
+            <div class="uk-width-2-3@l uk-width-3-3@s  data-container" id="data-container">
+                <p id="pokemon-name" class="nes-text title-pokemon">----</p>
+                <div id="data-types"></div>
+                <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m" id="stat-container">
+                </div>
+            </div>
+        </section>
+        <section id="pokemon-container" class="uk-column-1-2@s pk-container" uk-grid="masonry: true">
+
+        </section>
+        <!-- <br>
+        <img src="./images/pokeball.png" id="pokeImg" width="100px" alt="">
+        <br>     -->
+    </main>
+    <script src="./pokedex.js"></script>
+</body>
+</html>

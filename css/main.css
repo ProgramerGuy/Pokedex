@@ -1,0 +1,277 @@
+body {
+    margin: 0px;
+    background-color: #CE5275 !important;
+}
+
+header {
+    height: 150px;
+    width: 100%;
+    background-image: url('../images/pxArt3.png') !important;
+    background-position: 0px 0px;
+    background-size: 100% 90%!important;
+    background-color: none !important;
+    background-repeat-y: no-repeat;
+}
+
+.img_pokedex {
+    width: 372px;
+    position: absolute;
+    margin: 0px;
+    image-rendering: pixelated;
+}
+
+.img_pokedex img {
+    width: 100%;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+}
+
+header nav {
+    padding-top: 50px;
+}
+
+main{
+    color: white;
+    height: 100%;
+}
+
+.img-logo-container {
+    width: 100%;
+    text-align: center;
+}
+
+.img-logo-container img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+.busqueda-container {
+    height: 90px !important;
+}
+
+.btn-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-container button{ 
+    width: 100%;
+    height: 70%;
+}
+
+.pk-container {
+    display: flex !important;
+    /* gap: 20px; */
+    justify-content: center;
+    align-items: center !important;
+    padding: 20px !important;
+    margin-bottom: 20px !important;
+    margin-top: 50px !important;
+    width: 90%;
+}
+
+.resultado-container {
+    margin-top: 60px !important;
+    align-items: flex-start !important;
+}
+
+.screen-container {
+    height: 500px;
+    width: 100%;
+    background-image: url('../images/screen.png');
+    background-repeat: no-repeat;
+    background-size: 90% 90%;
+    background-position:  center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.screen-container img {
+    width: 80%;
+}
+
+.poke-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px !important;
+    padding: 10px !important;
+    border: 4px #892828 solid;
+    border-radius: 10px;
+    flex-direction: column;
+    background-color: white;
+    color: rgb(85, 85, 85);
+    height: 200px;
+}
+
+.poke-container:hover {
+    transform: scale(1.03) !important;
+    box-shadow: #892828 0px 0px 10px;
+}
+
+.title-pokemon {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.poke-type {
+    margin-bottom: 20px;
+}
+
+.stat-title {
+    color: rgb(31 142 237);
+    font-weight: 600;
+    font-size: 22px;
+}
+/* Smartphones (portrait and landscape) ----------- */
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        /* Styles */
+        .img_pokedex {
+            width: 230px;
+        }
+
+        header {
+            background-size: 100% 45%!important;
+        }
+
+    }
+    
+    /* Smartphones (landscape) ----------- */
+    @media only screen and (min-width : 321px) {
+    /* Styles */
+    }
+    
+    /* Smartphones (portrait) ----------- */
+    @media only screen and (max-width : 320px) {
+    /* Styles */
+    }
+    
+    /* iPads (portrait and landscape) ----------- */
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    /* Styles */
+    }
+    
+    /* iPads (landscape) ----------- */
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    /* Styles */
+    }
+    
+    /* iPads (portrait) ----------- */
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    /* Styles */
+    }
+    /**********
+    iPad 3
+    **********/
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+    /* Styles */
+    }
+    
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+    /* Styles */
+    }
+    /* Desktops and laptops ----------- */
+    @media only screen  and (min-width : 1224px) {
+    /* Styles */
+    }
+    
+    /* Large screens ----------- */
+    @media only screen  and (min-width : 1824px) {
+    /* Styles */
+    }
+    
+    /* iPhone 4 ----------- */
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+    /* Styles */
+    }
+    
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+    /* Styles */
+    }
+    
+    /* iPhone 5 ----------- */
+    @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+    /* Styles */
+    }
+    
+    @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+    /* Styles */
+    }
+    
+    /* iPhone 6, 7, 8 ----------- */
+    @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+    /* Styles */
+    }
+    
+    @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+    /* Styles */
+    }
+    
+    /* iPhone 6+, 7+, 8+ ----------- */
+    @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+    /* Styles */
+    }
+    
+    @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+    /* Styles */
+    }
+    
+    /* iPhone X ----------- */
+    @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+    /* Styles */
+    }
+    
+    @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+    /* Styles */
+    }
+    
+    /* iPhone XS Max, XR ----------- */
+    @media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+    /* Styles */
+    }
+    
+    @media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+    /* Styles */
+    }
+    
+    /* Samsung Galaxy S3 ----------- */
+    @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+    /* Styles */
+        .img_pokedex {
+            width: 230px;
+        }
+
+        header {
+            background-size: 100% 45%!important;
+        }
+    }
+    
+    @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+    /* Styles */
+    }
+    
+    /* Samsung Galaxy S4 ----------- */
+    @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+    /* Styles */
+    }
+    
+    @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+    /* Styles */
+    }
+    
+    /* Samsung Galaxy S5 ----------- */
+    @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+    /* Styles */
+    }
+    
+    @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+    /* Styles */
+    }
+    
